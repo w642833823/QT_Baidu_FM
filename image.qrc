@@ -1,0 +1,14 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+ <qresource >
+ <file>image/file_down/pause.png</file>
+ <file>image/file_down/play.png</file>
+ <file>image/file_down/down_1.png</file>
+ <file>image/file_down/down_2.png</file>
+ <file>image/file_down/shang_1.png</file>
+  <file>image/file_down/shang_2.png</file>
+ <file>image/file_down/next_1.png</file>
+ <file>image/file_down/next_2.png</file>
+        
+</qresource>
+</RCC>
