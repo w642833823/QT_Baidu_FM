@@ -3,31 +3,31 @@
 # Project created by QtCreator 2017-02-07T12:51:04
 #
 #-------------------------------------------------
-QT       +=network
-QT       += core gui
-QT       += multimedia
-QT       += multimediawidgets
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
-
+QT += network
+	QT += core gui
+	QT += multimedia
+	QT += multimedia
+	
+greaterThan(QT_MAJOR_VERSION, 4):QT += widgets
 TARGET = getMusic
 TEMPLATE = app
-
-CONFIG += c++11
-
+CONFIG += c++ 11
 SOURCES += main.cpp\
-        widget.cpp\
-        getpixmap.cpp\
-        downloadfile.cpp\
-        file_info.cpp\
-        getlrc.cpp
+           widget.cpp\
+           getpixmap.cpp\
+           downloadfile.cpp\
+           file_info.cpp\
+           getlrc.cpp\
+   
+     HEADERS += widget.h \
+                getpixmap.h \
+                downloadfile.h \
+                file_info.h \
+                getlrc.h
 
-HEADERS  += widget.h\
-                           getpixmap.h\
-                           downloadfile.h\
-                           file_info.h\
-                           getlrc.h
-#将图片编译到程序中
-RESOURCES     += image.qrc
+
+ #解决参数未使用的方法
+QMAKE_CXXFLAGS+=-Wno-unused-parameter
 
 ###指定moc命令将含Q_OBJECT的头文件转换成标准.h文件的存放目录       
 MOC_DIR=$$PWD/../temp/moc
