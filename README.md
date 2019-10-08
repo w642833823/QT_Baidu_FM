@@ -5,12 +5,11 @@
 
 
 speech-demo
-项目地址：https://github.com/Baidu-AIP/speech-demo
+项目地址：https://github.com/w642833823/My_QT
 
 文档地址：
 
-语音识别：http://ai.baidu.com/docs#/ASR-API/top
-语音合成：http://ai.baidu.com/docs#/TTS-API/top
+
 百度语音rest api 调用语音识别，语音合成示例
 
 Rest API 接口为http 访问， 任意操作系统，任意语言，只要能对baidu域名发起http请求的，均可以使用。
