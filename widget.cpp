@@ -79,7 +79,7 @@ void Widget::init()
     downLoadButton->setIconSize(QSize(164,164));
      connect(downLoadButton,&QPushButton::clicked,this,&Widget::on_downLoadButton_clicked);
      //详细歌曲信息
-          info_song_btn=new QPushButton("信息");                         	info_song_btn->setStyleSheet("QPushButton{border-radius: 5px;color:rgb(255, 255, 255);font: 25 26pt;}"
+          info_song_btn=new QPushButton;                         	info_song_btn->setStyleSheet("QPushButton{border-radius: 5px;color:rgb(255, 255, 255);font: 25 26pt;}"
                                     "QPushButton:hover{background-color:rgb(51,161,205); color: black;}"
                                     "QPushButton:pressed{background-color:rgb(85, 170, 255);}");
            connect(info_song_btn,&QPushButton::clicked,this,&Widget::info_song_clicked);
