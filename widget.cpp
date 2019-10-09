@@ -60,26 +60,26 @@ void Widget::init()
                                     "QPushButton:hover{background-color:rgb(51,161,201); color: black;}"
                                     "QPushButton:pressed{background-color:rgb(85, 170, 255);}"); connect(info_Btn,&QPushButton::clicked,this,&Widget::info_clicked);
 		    	        	   
-    prev_Button=new QPushButton();
+    prev_Button=new QPushButton("上一曲");
                prev_Button->setIcon(QIcon(":/image/file_down/shang_2.png"));
     prev_Button->setIconSize(QSize(164,164));
     prev_Button->setFlat(true ); connect(prev_Button,&QPushButton::clicked,this,&Widget::prevSong);
-    pause_btn=new QPushButton;
+    pause_btn=new QPushButton("暂停");
        pause_btn->setIcon(QIcon(":/image/file_down/pause.png"));
  pause_btn->setIconSize(QSize(164,164));
      connect(pause_btn,&QPushButton::clicked,this,&Widget::on_btn_start_clicked);                             
                                     
-    next_Button=new QPushButton();
+    next_Button=new QPushButton("下一曲");
     next_Button->setIcon(QIcon(":/image/file_down/next_2.png"));
     next_Button->setIconSize(QSize(164,164));
      connect(next_Button,&QPushButton::clicked,this,&Widget::on_nextButton_clicked);
                                     
-    downLoadButton=new QPushButton();
+    downLoadButton=new QPushButton("下载");
     downLoadButton->setIcon(QIcon(":/image/file_down/down_2.png"));
     downLoadButton->setIconSize(QSize(164,164));
      connect(downLoadButton,&QPushButton::clicked,this,&Widget::on_downLoadButton_clicked);
      //详细歌曲信息
-          info_song_btn=new QPushButton;                         	info_song_btn->setStyleSheet("QPushButton{border-radius: 5px;color:rgb(255, 255, 255);font: 25 26pt;}"
+          info_song_btn=new QPushButton("信息");                         	info_song_btn->setStyleSheet("QPushButton{border-radius: 5px;color:rgb(255, 255, 255);font: 25 26pt;}"
                                     "QPushButton:hover{background-color:rgb(51,161,205); color: black;}"
                                     "QPushButton:pressed{background-color:rgb(85, 170, 255);}");
            connect(info_song_btn,&QPushButton::clicked,this,&Widget::info_song_clicked);
