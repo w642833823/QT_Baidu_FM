@@ -100,14 +100,14 @@ void Widget::init()
     //实现显示歌手图片
     show_songPicRadio=new QLabel;
     //设置图片大小
-    show_songPicRadio->setFixedSize(400,400);
+    show_songPicRadio->setFixedSize(200,200);
     show_songPicRadio->setScaledContents(true );
    show_songPicRadio->setFrameStyle(QFrame::Panel | QFrame::Sunken); //设置外观
     hboxLayout_1=new QHBoxLayout;
     //添加弹簧
-    hboxLayout_1->addSpacerItem(new QSpacerItem(200, 200));
+    hboxLayout_1->addSpacerItem(new QSpacerItem(100, 100));
     hboxLayout_1->addWidget(show_songPicRadio);
-    hboxLayout_1->addSpacerItem(new QSpacerItem(200, 200));
+    hboxLayout_1->addSpacerItem(new QSpacerItem(100, 100));
 //进度条部分
   	show_time=new QLabel;
 	show_time->setFont(QFont("timer",20,QFont::Bold));
